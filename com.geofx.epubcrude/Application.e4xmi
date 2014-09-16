@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ASCII"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_L_2gsD3qEeSxpb8YCWaqOQ" elementId="com.geofx.epubcrude.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_OWbWgD3qEeSxpb8YCWaqOQ" elementId="com.geofx.epubcrude.trimmedwindow.epubcrude" label="epubcrude" x="100" y="100" width="800" height="600">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_eEr3wD3tEeSxpb8YCWaqOQ" elementId="com.geofx.epubcrude.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_h0-SgD3tEeSxpb8YCWaqOQ" elementId="com.geofx.epubcrude.perspective.epubcrude" label="epubcrude">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_ohGMQD3tEeSxpb8YCWaqOQ" elementId="com.geofx.epubcrude.partsashcontainer.main" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_x2f1YD3tEeSxpb8YCWaqOQ" elementId="com.geofx.epubcrude.partstack.0">
+            <children xsi:type="basic:Part" xmi:id="_E0uZ8D3uEeSxpb8YCWaqOQ" elementId="com.geofx.epubcrude.part.navigator" contributionURI="bundleclass://com.geofx.epubcrude/com.geofx.epubcrude.NavigatorPart" label="Navigator"/>
+          </children>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_7nz-cD3tEeSxpb8YCWaqOQ" elementId="com.geofx.epubcrude.partsashcontainer.0">
+            <children xsi:type="basic:PartStack" xmi:id="_ANCdID3uEeSxpb8YCWaqOQ" elementId="com.geofx.epubcrude.partstack.1">
+              <children xsi:type="basic:Part" xmi:id="_GvVFcD3uEeSxpb8YCWaqOQ" elementId="com.geofx.epubcrude.part.editor" contributionURI="bundleclass://com.geofx.epubcrude/com.geofx.epubcrude.EditorPart" label="Editor"/>
+            </children>
+            <children xsi:type="basic:PartStack" xmi:id="_A-LmMD3uEeSxpb8YCWaqOQ" elementId="com.geofx.epubcrude.partstack.2">
+              <children xsi:type="basic:Part" xmi:id="_Jz0xMD3uEeSxpb8YCWaqOQ" elementId="com.geofx.epubcrude.part.console" contributionURI="bundleclass://com.geofx.epubcrude/com.geofx.epubcrude.ConsolePart" label="Console"/>
+            </children>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_m-VmwD3yEeSA0vi74jb4Lw" elementId=" org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_yWfx0D3yEeSA0vi74jb4Lw" elementId="org.eclipse.ui.file.menu" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_15y5cD3yEeSA0vi74jb4Lw" elementId="com.geofx.epubcrude.handledmenuitem.saveall" label="Save All" command="_h7oXUD3xEeSA0vi74jb4Lw"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_Ah2dQD3zEeSA0vi74jb4Lw" elementId="com.geofx.epubcrude.menuseparator.0"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_7xhh0D3yEeSA0vi74jb4Lw" elementId="com.geofx.epubcrude.handledmenuitem.exit" label="Quit" command="_no6DMD3xEeSA0vi74jb4Lw"/>
+      </children>
+    </mainMenu>
+  </children>
+  <handlers xmi:id="_EUGcUD3yEeSA0vi74jb4Lw" elementId="com.geofx.epubcrude.handler.saveall" contributionURI="bundleclass://com.geofx.epubcrude/com.geofx.epubcrude.handlers.SaveAllHandler" command="_h7oXUD3xEeSA0vi74jb4Lw"/>
+  <handlers xmi:id="_RNXNwD3yEeSA0vi74jb4Lw" elementId="com.geofx.epubcrude.handler.exit" contributionURI="bundleclass://com.geofx.epubcrude/com.geofx.epubcrude.handlers.ExitHandler" command="_no6DMD3xEeSA0vi74jb4Lw"/>
+  <commands xmi:id="_h7oXUD3xEeSA0vi74jb4Lw" elementId="org.eclipse.ui.file.saveAll" commandName="Save All" description="Save all alteredd resources"/>
+  <commands xmi:id="_no6DMD3xEeSA0vi74jb4Lw" elementId="org.eclipse.ui.file.exit" commandName="Quit" description="Quit the application"/>
+  <addons xmi:id="_L_2gsT3qEeSxpb8YCWaqOQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_L_2gsj3qEeSxpb8YCWaqOQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_L_2gsz3qEeSxpb8YCWaqOQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_L_2gtD3qEeSxpb8YCWaqOQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_L_2gtT3qEeSxpb8YCWaqOQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_L_2gtj3qEeSxpb8YCWaqOQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_L_2gtz3qEeSxpb8YCWaqOQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+</application:Application>
